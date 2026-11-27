@@ -1,0 +1,74 @@
+body {
+  font-family: system-ui, sans-serif;
+  background: #fafafa;
+  margin: 0;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.search {
+  display: flex;
+  gap: 0.5rem;
+}
+
+select {
+  flex: 1;
+  padding: 0.8rem;
+  font-size: 1.1rem;
+}
+
+button {
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#results {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.card h3 {
+  margin: 0;
+  padding: 0.6rem;
+  font-size: 1rem;
+}
+
+#details {
+  margin-top: 1.5rem;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+#details:empty {
+  display: none;
+}
+
+#backBtn {
+  margin-top: 1rem;
+  width: 100%;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
